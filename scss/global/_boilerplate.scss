@@ -1,0 +1,35 @@
+@use "../util" as u;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Manrope", Arial, Helvetica, sans-serif;
+	line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block; // Note that images by default are all inline.
+}
+
+.wrapper {
+	width: min(u.rem(1110), calc(100% - u.rem(32)));
+	margin-inline: auto;
+	border: 2px solid blue;
+}
