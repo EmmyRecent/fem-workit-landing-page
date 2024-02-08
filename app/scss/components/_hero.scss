@@ -1,0 +1,24 @@
+@use "../util" as u;
+
+.hero {
+	background-color: var(--color-dk-purple);
+	text-align: center;
+
+	&__wrapper {
+	}
+
+	&__headline {
+		color: var(--color-white);
+		margin-block-end: u.rem(40);
+		max-width: 11ch;
+		margin-inline: auto;
+	}
+
+	&__button {
+		margin-block-end: u.rem(50);
+	}
+
+	&__image {
+		margin-inline: auto;
+	}
+}

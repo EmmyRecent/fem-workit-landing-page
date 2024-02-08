@@ -1,0 +1,8 @@
+@use "../util" as u;
+
+.button {
+	display: inline-block; // I like to set my button elements to inline-block
+	color: var(--color-green);
+	padding: 16px 33px 17px;
+	border: 2px solid; // note: if you don't set a color, it is going to inherit the text color style.
+}

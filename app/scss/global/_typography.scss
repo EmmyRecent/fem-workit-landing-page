@@ -6,6 +6,18 @@ h3 {
 	font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
 	font-weight: 600;
 	line-height: 1.1; // I usually do this set this.
+
+	span {
+		display: inline-block;
+
+		// Underline in the word tailored.
+		&::after {
+			content: "";
+			height: 2px;
+			display: block;
+			background-color: var(--color-green);
+		}
+	}
 }
 
 h1 {
@@ -18,8 +30,4 @@ h2 {
 
 h3 {
 	font-size: clamp(u.rem(28), u.rem(25.959183673469386) + 0.5442176870748299vw, u.rem(32));
-}
-
-p {
-	font-size: clamp(u.rem(16), u.rem(14.979591836734693) + 0.27210884353741494vw, u.rem(18));
 }
