@@ -12,6 +12,7 @@ body {
 	font-size: clamp(u.rem(16), u.rem(14.979591836734693) + 0.27210884353741494vw, u.rem(18));
 	line-height: 1.7;
 	min-height: 150vh;
+	overflow-x: hidden;
 }
 
 h1,
