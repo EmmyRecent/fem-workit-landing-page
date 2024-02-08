@@ -11,6 +11,7 @@ body {
 	font-family: "Manrope", Arial, Helvetica, sans-serif;
 	font-size: clamp(u.rem(16), u.rem(14.979591836734693) + 0.27210884353741494vw, u.rem(18));
 	line-height: 1.7;
+	min-height: 150vh;
 }
 
 h1,
@@ -27,6 +28,8 @@ ul {
 
 img {
 	display: block; // Note that images by default are all inline.
+	max-width: 100%; // Makes the image Maintain its aspect ratio. This is commonly used with height auto for image responsiveness.
+	height: auto;
 }
 
 a,
