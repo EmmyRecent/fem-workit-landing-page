@@ -1,0 +1,23 @@
+@use "../util" as u;
+
+.curved {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 49.2% 0 0 0;
+		width: 100%;
+		height: 4vw; // This means the height gets smaller as the view port gets smaller.
+		background-image: url("/app/assets/images/curved-hero-bottom.svg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%; // I set the preserveAspectRatio="none" in the svg file so that it can stretch it self like a jpg file this is because as an svg it is maintaining its aspect ratio.
+	}
+
+	// Same as .curved.light
+	&.light {
+		&::after {
+			background-image: url("/app/assets/images/curved-hero-bottom-light.svg");
+		}
+	}
+}
