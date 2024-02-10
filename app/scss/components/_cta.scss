@@ -17,6 +17,7 @@
 		@include u.breakpoint(large) {
 			grid-template-rows: u.rem(173) auto auto;
 			grid-template-columns: auto u.rem(95) auto;
+			padding-block-end: 120px;
 		}
 	}
 
